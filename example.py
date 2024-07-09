@@ -1,10 +1,12 @@
-import pyipng
-import os
+# Import the library
+import ipypng
 
+# Get the data of the image (as bytes)
+data = open("non-cgbi-image.png", "rb").read()
 
-file_path = os.path.join(os.getcwd(),'cgbi_image.png')
-with open(file_path,'rb') as f:
-    bytes = f.read()
-    fix_bytes = pyipng.convert(bytes)
-    with open("fix_cgbi_image.png",'wb') as f:
-        f.write(fix_bytes)
+# Convert the image to CgBI
+new_data = ipypng.convert(data)
+
+# Save the image
+with open("cgbi-image.png", "wb") as f:
+    f.write(new_data)
