@@ -1,1 +1,1 @@
-from .pyipng import *
+from .ipypng import *
