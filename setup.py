@@ -1,30 +1,26 @@
 from setuptools import setup,find_packages
 
-version = '1.0.3'
+version = '1.0.0'
 
 with open('./README.rst',encoding='utf-8') as f:
     readme = f.read()
 
 
 setup(
-    name="PyiPNG",
+    name="iPyPNG",
     version=version,
-    author="venjye",
-    author_email="venjye@gmail.com",
-    url="https://github.com/venjye/PyiPNG",
+    author="HGStyle",
+    author_email="hgstyle@outlook.fr",
+    url="https://github.com/HGStyle/iPyPNG",
     project_urls={
-        "Documentation": "https://github.com/venjye/PyiPNG",
+        "Documentation": "https://github.com/HGStyle/iPyPNG",
     },
-    description="Convert CgBI to PNG with Python",
+    description="Convert PNG to CgBI with (pure) Python",
     long_description=readme,
     packages=find_packages(exclude=["tests*"]),
     python_requires=">=3.6",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
