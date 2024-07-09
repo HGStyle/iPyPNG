@@ -15,7 +15,7 @@ setup(
     project_urls={
         "Documentation": "https://github.com/HGStyle/iPyPNG",
     },
-    description="Convert PNG to CgBI with (pure) Python",
+    description="Convert real PNG to Apple fake PNG (CgBI)",
     long_description=readme,
     packages=find_packages(exclude=["tests*"]),
     python_requires=">=3.6",
