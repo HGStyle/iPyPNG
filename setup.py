@@ -1,6 +1,6 @@
 from setuptools import setup,find_packages
 
-version = '1.0.0'
+version = '1.0.1'  # Actually nothing has changed between 1.0.0 and 1.0.1 but GitHub Workflows and PyPI didn't wanted "1.0.0" to work correctly...
 
 with open('./README.rst',encoding='utf-8') as f:
     readme = f.read()
@@ -18,7 +18,7 @@ setup(
     description="Convert real PNG to Apple fake PNG (CgBI)",
     long_description=readme,
     packages=find_packages(exclude=["tests*"]),
-    python_requires=">=3.6",
+    python_requires=">=3.9",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Programming Language :: Python :: 3.9",
