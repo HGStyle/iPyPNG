@@ -1,6 +1,6 @@
 from setuptools import setup,find_packages
 
-version = '1.0.1'  # Actually nothing has changed between 1.0.0 and 1.0.1 but GitHub Workflows and PyPI didn't wanted "1.0.0" to work correctly...
+version = '1.0.0'
 
 with open('./README.rst',encoding='utf-8') as f:
     readme = f.read()
